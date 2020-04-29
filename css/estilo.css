@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+body {
+    font-family: "Varela Round", Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    overflow-x: hidden;
+  }
+
+#navbar {
+    display: inline;
+    background-color: white;
+}
+  
+#navbar .content {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+}
