@@ -15,23 +15,21 @@
                 </header>
                 <!--Menu -->
                 <ul>
-                    <li> <a href="#"></a> Indroducción </li>
-                    <li> <a href="#"></a> ¿Que es game Maker Studio? <a href="#"></a> Un poco de Historia</li>
-                    <li> <a href="#"></a> </li>
-                    <li> <a href="#"></a> </li>
-                    <li> <a href="#"></a> </li>
-                    <li> <a href="#"></a> </li>
-                    <li> <a href="#"></a> </li>
-                    <li> <a href="#"></a> </li>
-                    <li> <a href="#"></a> </li>
-                    <li> <a href="#"></a> </li>
+                    <li> <a href="#intro">Indroducción </a> </li>
+                    <li> <a href="#quees">¿Que es game Maker Studio?</a> </li>
+                    <li> <a href="#caracteristicas">Características GameMaker</a> </li>
+                    <li> <a href="#sintaxis">Sintaxis general</a> </li>
+                    <li> <a href="#funciones">Funciones</a> </li>
+                    <li> <a href="#variables">Variables</a> </li>
+                    <li> <a href="#tipos">Tipos</a> </li>
+                    <li> <a href="#alcance">Alcance</a> </li>
                 </ul>
             </section>
         </nav>
         <Main id="main-doc">
-            <section>
+            <section class="main-section" id="intro">
                 <header><h2> Indroducción </h2></header>
-                <Article>
+                <Article class="content">
                     <p> Game Maker Language (GML) es un lenguaje de programación interpretado (aunque con el uso de YoYoCompiler puede ser compilado) desarrollado para usarse como complemento de la aplicación de desarrollo de juegos Game Maker. El lenguaje es utilizado en el programa para dar mayor potenciación al desarrollo de juegos u otros sistemas dentro de tal. El lenguaje fue codificado usando los lenguajes Delphi y C++.</p>
 
                     <p> Es un lenguaje de programación muy flexible, basado en C++, aunque también se ve influenciado por la sintaxis de otros lenguajes como Pascal. La estructura general del código GML puede tomar diferentes formas de sintaxis, ya que no se ve sujeta a una sintaxis estricta como la de C. Es capaz de trabajar con números, cadenas de texto y demás de manera nativa. </p> 
@@ -43,9 +41,9 @@
                     </ul>
                 </Article>
             </section>
-            <section>
+            <section class="main-section" id="quees">
                 <header> <h2> ¿Que es game Maker Studio? </h2> </header>
-                <Article>
+                <Article class="content">
                     <p> GameMaker: Studio (anteriormente llamado Animo desde 1999, Game Maker desde 2011, GameMaker desde 2012, y GameMaker: Studio desde 2017) es una plataforma basada en un lenguaje de programación interpretado y un kit de desarrollo de software (SDK) para desarrollar videojuegos, creado por el profesor Mark Overmars en el lenguaje de programación Delphi, y orientado a usuarios novatos o con pocas nociones de programación. El programa es Pago, aunque existe una versión de prueba con todas las características, durante 30 días. Overmars liberó la primera versión pública el 15 de noviembre de 1999. </p>
                 
                     <h3>Un poco de Historia</h3>                    
@@ -58,9 +56,9 @@
 
                 </Article>
             </section>
-            <section>
+            <section class="main-section" id="caracteristicas">
                 <header> <h2> Características GameMaker</h2> </header>
-                <Article>
+                <Article class="content">
                     <p> El programa está diseñado para permitir a sus usuarios desarrollar fácilmente videojuegos sin tener que aprender un lenguaje de programación como C++ o Java. Para los usuarios experimentados Game Maker contiene un lenguaje de programación de scripts llamado Game Maker Language (GML), que permite a los usuarios personalizar aún más sus videojuegos y extender sus características. </p>
                         <p> Game Maker usa su propio lenguaje de programación, Game Maker Language (GML), con el que se pueden conseguir impresionantes videojuegos, pues aunque Game Maker está diseñado para la creación de videojuegos en 2 dimensiones, usando GML se pueden conseguir videojuegos 3D avanzados tales como un videojuego de disparos en primera persona  </p>
                         <p>El desarrollo de un videojuego es realmente simple, al basarse en el manejo de:</p>
@@ -81,59 +79,108 @@
                             <li>Operador de igualdad, es indiferente si se usa un doble igual ("==") para leer el valor de una variable o para escribir un valor.</li>
                 </Article>
             </section>
-            <section>
+            <section class="main-section" id="sintaxis">
                 <header> <h2> Sintaxis general</h2> </header>
-                <Article>
+                <Article class="content">
                     <p> El lenguaje GML a nivel de sintaxis es similar a C++, aun así, este lenguaje constata de mucha flexibilidad debido a sus diversas variaciones de sintaxis (las cuales son todas válidas). </p>
                         <p>Por ejemplo, al trabajar con operadores puede funcionar así: </p>
                         <!--funcion -->
                         <pre>
                             <code>
-                                 g=g+1;
+                                 g = g + 1;
                             </code>
                         </pre>
                         <p>Pero en GML también es válido de esta forma:</p> 
-                        <!--funcion -->
+                        <pre>
+                            <code>
+                                 g += 1;
+                            </code>
+                        </pre>
                         <p>Esta regla de operadores también se puede aplicar en /=, -= y *=.</p>
-                        <!--funcion -->
                         <p>El lenguaje GML además, no obliga el uso reglamentario del símbolo ";" al final de cada línea o función, lo cual le hace flexible en el aspecto estricto de la sintaxis.</p>
                 </Article>
-                <section>
+            </section>
+                <section class="main-section" id="funciones">
                     <header><h2> Funciones </h2> </header>
-                    <Article>
-                        
+                    <Article class="content">
+                        <p>El lenguaje GML por entender ya tiene un gran número de funciones y sistemas implementados dentro del mismo programa en el que trabaja, es decir, no necesita de librerías externas como en otros lenguajes (C++ por ejemplo), aun así, también cabe la posibilidad de poder usar librerías externas para potenciar ciertos campos del sistema. Estas librerías deberán estar en un formato u otro dependiendo de con que plataforma estemos trabajando, como DLL para Windows y .java para Android</p>
                     </Article>
                 </section>
-                <section>
+                <section class="main-section" id="variables">
                     <header> <h2> Variables</h2> </header>
-                    <Article>
-                        <!--<p> </p>
-                            <p> </p>
-                            <p> </p> 
-                        -Lista-->
-                    </Article>
+                    <Article class="content">
+                        <p>GML no necesita de la declaración compulsiva de variables para trabajarlas, es decir, basta con asignarle un valor fijo una vez en cualquier sitio. Por ejemplo: </p>
+                        <pre>
+                            <code>
+                                 "variable=<valor>;
+                            </code>
+                        </pre>
+                            <p>En este caso, la variable ya está declarada y puede usarse de forma general, aun así, GML también incluye un bloque "var" imitando las declaraciones de variables de otros lenguajes, pudiendo declarar un sin número de variables en el programa sin necesidad de asignarles un valor (si no que este automáticamente es 0). Por ejemplo: </p> 
+                            <pre>
+                                <code>
+                                     var xx,yy,ss;
+                                </code>
+                            </pre>
+                            <p>Game Maker también trabaja con constantes, las cuales se pueden asignar desde una función del programa (más las que ya existen por ende).
+                                Dentro del código GML existen dos tipos de variables de trabajo, las variables locales y variables globales. Las variables locales trabajan únicamente dentro de un "objeto", es decir, no es existente fuera del "objeto" o bloque de código(en caso de haber sido declaradas con "var") que la trabaje (lo cual permite usar el mismo nombre de la variable en otro objeto). Por otro lado están las variables globales, las cuales usan el prefijo <code>global.</code> global. antes del nombre de la variable, por ejemplo:</p>
+                                <pre>
+                                    <code>
+                                        global.variable=0;
+                                    </code>
+                                </pre>
+                            <p>Las variables globales tienen uso en todo el programa, por lo cual solo puede existir una sola variable global con el mismo nombre, y su valor puede verse afectado desde cualquier parámetro del programa/código.
+                                GML también puede manejar arrays de manera muy simple y muy similar a C++.
+                                Deben ser declaradas de la forma:</p>
+                                <pre>
+                                    <code>
+                                        array[índice1,índice2];
+                                    </code>
+                                </pre>
+                            <p>Las arrays en Game Maker pueden ser de 1 o 2 dimensiones y pueden contener una mezcla de strings y de valores reales, pero no otras arrays. También existe un límite en los tamaños: Los índices deben estar entre 0 y 32.000 y no puede haber más de 1.000.000 valores en una misma array.</p>
+                            <p>GML también cuenta con funciones utilizadas para crear y editar seis estructuras de datos simples. Estas funciones sólo están disponibles para los usuarios que tienen la versión Pro de Game Maker. Las estructuras de datos disponibles son Stacks, Queues, Listas, Mapas, Queues de prioridad, y Grids.</p>
+                        </Article>
                 </section>
-                <section>
+                <section class="main-section" id="tipos">
                     <header><h2> Tipos</h2> </header>
-                    <Article>
-                        <!--<p> </p>
-                            <p> </p>
-                            <p> </p> 
-                        -Lista-->
+                    <Article class="content">
+                        <p>Por la simplicidad del GML, este sólo tiene dos tipos de variables. Cualquier variable puede llevar cualquier tipo de datos sin ningún tipo de declaración. </p>
+                         <ul>
+                             <li>Strings Son cadenas de caracteres ASCII (ó Unicode y ANSI en caso de GM 8.1) que pueden tener cualquier longitud. Como GM prefija el tamaño de las strings como valores enteros de 4 bytes, una string en realidad no puede tener más de 4,294,967,296 caracteres, si se supera dicho número, los caracteres son cortados desde el principio hasta que el número total de estos sea menor al límite. Sin embargo, generalmente las strings son muchísimo más cortas.</li>
+                         </ul> 
+                         <pre>
+                             <code>ty_string</code>
+                         </pre> 
+                        <p>Boolean Son para distinguir un caracter de tipo true o tipo false, no almacena ningún valor</p>
+                        <ul>
+                            <li>Valores Reales Son números con signo de punto flotante. Eso quiere decir que pueden ser números positivos o negativos y que pueden tener parte decimal. Desde la versión 6.1, GM permite la representación de valores hexadecimales como reales en el código, si se preceden del carácter $. En la versión 6, el manejo de valores reales tenía un bug que provocaba errores de precisión al trabajar con valores reales altos. El bug también existe en GM 7 y 8, pero fue mitigado con más precisión.</li>
+                        </ul> 
+                        <pre>
+                            <code>ty_real</code>
+                        </pre>
+                        <p>Como GML no tiene valores booleanos, sentencias que requieren valores booleanos (como if) evaluarán cualquier valor real mayor que 0.5 como verdadero y cualquier valor real menor o igual a 0.5 como falso. En GML también existen las constantes por defecto true y false que equivalen a 1 y 0 respectivamente, y pueden ser usadas para hacer el código más legible. </p>
                     </Article>
                 </section>
-                <section>
+                <section class="main-section" id="alcance">
                     <header><h2> Alcance</h2> </header>
-                    <Article>
-                        <!--<p> </p>
-                            <p> </p>
-                            <p> </p> 
-                        -Lista-->
+                    <Article class="content">
+                        <p>En GML, hay dos tipos de variables locales: locales a una "instancia", y locales a un "script" (o cualquier otra pieza de código que tenga su propio contenedor). Ser local a una instancia significa que esa variable está unida a esa instancia particular y que para ser llamada desde otra instancia debe usarse como prefijo el nombre de la instancia que contiene la variable. Ser local a un script significa que la variable sólo puede ser usada en ese script y que al terminar de procesarse éste, la variable expira. El término "local" sin más especificaciones, usualmente se refiere a local a una instancia. </p>
+                        <p>Por defecto, una variable es local de una instancia pero no local al script en el que es usada. Para hacer una variable accesible por todas las instancias (y scripts) puede ser definida usando el prefijo global global.foo=bar; o declarada explícitamente globalvar foo,bar;. Usando la primera forma, la variable debe siempre ser llamada usando el prefijo global.; la declaración con globalvar no requiere ningún prefijo. Para hacer una variable local a un script se usa la palabra clave var: var foo,bar;. </p>
+                        <p>Se puede acceder a una variable que es local a una instancia desde otra instancia usando como prefijo un identificador de instancia instancia.variable. No hay forma de acceder a una variable local de un script desde otro, a menos que la variable se pase de script en script como argumento. </p> 
+                        <p>Una instancia puede ejecutar código en otra instancia usando la sentencia "with". Por ejemplo, la siguiente pieza de código, colocada en un evento de colisión, puede ser usada para destruir a la instancia que colisiona con la actual. Cuando se ejecuta un evento de colisión, Game Maker automáticamente crea la variable "other", la cual se refiere a la instancia envuelta en la colisión.</p>
+                        <pre>
+                            <code>with (other) {instance_destroy();}</code>
+                        </pre>
+                        <p>Nótese que cuando una variable es local a un script, ésta es independiente de toda instancia. Por ejemplo, el siguiente código funcionaría aunque la variable foo no está definida en OtraInstancia.</p>
+                        <pre>
+                            <code>var foo;
+                                foo="bar";
+                                with (OtraInstancia) {show_message(foo);}</code>
+                        </pre>
                     </Article>
                 </section>
             <footer>
-                Referencias
-                <!-- Derechos de autor y vav-->
+                <p>Referencias: Wikipedia</p>
+                <p>Hecho por: Tatiana Ortega</p>
             </footer>
         </Main>
     </body>
